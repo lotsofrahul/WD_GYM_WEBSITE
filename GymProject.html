@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gym Phobia</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@700&family=Noto    +Sans+Vithkuqi&family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <style>
+        /* CSS Reset */
+        body{
+            margin: 0px;
+            padding: 0px;
+            background: url('https://cdn.pixabay.com/photo/2016/11/22/22/25/abs-1850926_1280.jpg');
+            color: white;
+            font-family: 'Kanit', sans-serif;
+        }
+        /* header::before{
+            content: "";
+            background: url('https://images.unsplash.com/photo-1571902943202-507ec2618e8f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=775&q=80') no-repeat center center/cover;
+            position: absolute;
+            top: 0;
+            left: 0;
+            opacity: 0.5;
+            z-index: -1;
+            width: 100%;
+            height: 100%;
+        } */
+        .left{
+            display: inline-block;
+            position: absolute;
+            top: 20px;
+            left: 30px;
+            /* border: 2px solid red; */
+        }
+        .mid{
+            display: block;
+            margin: 25px auto;
+            width: 45%;
+            margin-top: 23px;
+            /* border: 2px solid green; */
+        }
+        .right{
+            position: absolute;
+            top: 24px;
+            right: 26px;
+            display: inline-block;
+            /* border: 2px solid blue; */
+        }
+        .navbar li{
+            display: inline-block;
+            font-size: 15px;
+        }
+        .navbar li a{
+            color: white;
+            text-decoration: none;
+            padding: 4px 24px;
+        }
+        .navbar li a:hover{
+            color: rgb(212, 179, 135);
+            /* text-decoration: underline; */
+            /* text-decoration-line: overline; */
+        }
+        .navbar li a:active{
+            text-decoration-line: overline;
+        }
+        .left img{
+            position: absolute;
+            top: -26px;
+            left: 2px;
+            width: 79px;
+            filter: invert();
+        }
+        .left img:hover,#title:hover{
+            cursor: pointer;
+        }
+        /* .left div{
+            font-size: 15px;
+            text-align: center;
+        } */
+        #title{
+            font-size: 18px;
+            position: absolute;
+            top: 54px;
+            left: 23px;
+        }
+        .btn{
+            font-family: 'Kanit', sans-serif;
+            margin: 0px 9px;
+            color: white;
+            background-color: black;
+            padding: 2px 7px;
+            border: 2px solid rgb(212, 179, 135);
+            border-radius: 5px;
+        }
+        .btn:hover{
+            cursor: pointer;
+            color: rgb(212, 179, 135);
+        }
+        .container{
+            border: 2px solid white;
+            margin: 89px 49px;
+            padding: 54px 40px;
+            width: 30%;
+            border-radius: 9px;
+            background-color: rgba(212, 179, 135, 0.185);
+            box-shadow: 1.5px 1.5px 2px 1px rgb(212, 179, 135);
+            /* box-shadow: 2.5px 2.5px 2px 2px rgb(212, 179, 135); */
+        }
+        .form-group input{
+            text-align: center;
+            border: 2px solid black;
+            display: block;
+            margin: 4px auto;
+            padding: -3px;
+            width: 186px;
+            font-size: 15px;
+            border-radius: 6px;
+            font-family: 'Kanit', sans-serif;
+        }
+        .subbtn{
+            font-family: 'Kanit', sans-serif;
+            margin: 0px 149px;
+            color: white;
+            background-color: black;
+            padding: 2px 13px;
+            border: 2px solid rgb(212, 179, 135);
+            border-radius: 5px;
+            margin-top: 23px;
+        }
+        .subbtn:hover{
+            cursor: pointer;
+            color: rgb(212, 179, 135);
+        }
+        /* #title{
+            text-shadow: 2px 2px 2px rgb(212, 179, 135);
+        } */
+        #Join{
+            text-shadow: 1.5px 1.5px 1px rgb(212, 179, 135);
+        }
+    </style>
+</head>
+<body>
+    <header class="header">
+        <!-- Left box for logo -->
+        <div class="left">
+            <img src="gymlogo.png" alt="">
+        </div>
+        <div id="title">Gym Phobia</div>
+        <!-- mid box for navbar -->
+        <div class="mid">
+            <ul class="navbar">
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Fitness Calculator</a></li>
+                <li><a href="#">Contact us</a></li>
+            </ul>
+        </div>
+        <!-- right box for buttons -->
+        <div class="right">
+            <button class="btn">Call us now</button>
+            <button class="btn">Email us</button>
+        </div>
+    </header>
+    <div class="container">
+        <h1 id="Join">Join Now &#8681;</h1>
+        <form action="noaction.php">
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Name">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Age">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Gender">
+            </div>
+            <div class="form-group">
+                <input type="text" placeholder="Enter your Locality">
+            </div>
+            <button class="subbtn">
+                Submit
+            </button>
+        </form>
+    </div>
+</body>
+</html>
